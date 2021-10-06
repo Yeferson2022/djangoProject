@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'carro_moto',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
