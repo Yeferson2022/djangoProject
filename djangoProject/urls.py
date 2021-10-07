@@ -21,7 +21,7 @@ from rest_framework import permissions
 from rest_framework.routers import SimpleRouter
 
 from carro_moto.views import CarroMotoViewsSet
-
+from Empresa.views import EmpresaViewsSet
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -35,6 +35,7 @@ schema_view = get_schema_view(
 
 router = SimpleRouter()
 router.register('carromoto', CarroMotoViewsSet)
+router.register('empreas', EmpresaViewsSet)
 
 urlpatterns = [
     url(r'^api/', include(router.urls)),
